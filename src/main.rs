@@ -1,7 +1,7 @@
 use gdlauncher::{crumbling_list, read_first_k};
 use std::fs::File;
 use std::io::BufReader;
-
+// Check lib.rs to see where the magic happens!
 fn main() {
     let file = File::open("challenge_input.txt").expect("File not found");
     // In case file size is known, use:
