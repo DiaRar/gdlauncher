@@ -25,7 +25,7 @@ pub fn read_first_k(
     number_of_elements: u32,
 ) -> (Lines<BufReader<File>>, VecDeque<u128>, BTreeMap<u128, u8>) {
     let mut values_sorted = BTreeMap::new();
-    let mut values = VecDeque::with_capacity(100);
+    let mut values = VecDeque::with_capacity(number_of_elements);
     let mut cursor = reader.lines();
     let mut index = 0;
     // Parsing the first 100 lines and appending them to both the sorted and unsorted versions
